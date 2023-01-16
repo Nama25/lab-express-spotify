@@ -7,8 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello</h1>
-    <a href="/albums/{{id}}">View Albums</a>
+    <h1>Your music search result list</h1>
+
+    <div>
+        {{#each data.body.artists.items}}
+        <img src="{{}}" alt="album cover">
+
+        {{name}}
+
+        <a href="/albums/{{}}"><button>View Albums</button></a>
+
+    </div>
     
 </body>
 </html>
